@@ -7,6 +7,12 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Streamlit Component" />
     <link rel="stylesheet" href="bootstrap.min.css" />
+    <script>
+      const SET_FRAME_HEIGHT = "streamlit:setFrameHeight"
+      function setFrameHeight(height) {
+        _sendMessage(SET_FRAME_HEIGHT, { height: height })
+      } 
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
